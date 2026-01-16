@@ -1,0 +1,42 @@
+import turtle
+
+window = turtle.Screen()
+A = turtle.Turtle()
+B = turtle.Turtle()
+C = turtle.Turtle()
+
+A.color("cyan")
+B.color("dark magenta")
+C.color("light pink")
+
+A.penup()
+B.penup()
+C.penup()
+A.goto(-250,75)
+B.goto(-250,0)
+C.goto(-250,-75)
+A.pendown()
+B.pendown()
+C.pendown()
+A.pensize(35)
+B.pensize(35)
+C.pensize(35)
+
+for i in range(5):
+    A.left(45)
+    A.forward(70)
+    A.right(90)
+    A.forward(70)
+    A.left(45)
+    B.left(45)
+    B.forward(70)
+    B.right(90)
+    B.forward(70)
+    B.left(45)
+    C.left(45)
+    C.forward(70)
+    C.right(90)
+    C.forward(70)
+    C.left(45)
+
+window.exitonclick()
